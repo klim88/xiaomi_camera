@@ -14,7 +14,7 @@ CONF_SELECTED_CAMERAS = "selected_cameras"
 CONF_STREAM_NAME = "stream_name"
 CONF_STREAM_URL = "stream_url"
 
-DEFAULT_GO2RTC_URL = "http://127.0.0.1:1984"
+DEFAULT_GO2RTC_URL = "http://a889bffc-go2rtc:1984"
 
 REGIONS = {
     "cn": "China",

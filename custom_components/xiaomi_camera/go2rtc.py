@@ -76,7 +76,7 @@ class Go2RTCClient:
         )
 
     async def async_check(self) -> dict[str, Any]:
-        data = await self._request_json("GET", "/api")
+        data = await self._request_json("GET", "/api/streams")
         if not isinstance(data, dict):
             raise CannotConnect("go2rtc API returned an unexpected response")
         return data

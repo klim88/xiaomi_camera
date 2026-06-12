@@ -30,17 +30,17 @@ https://github.com/AlexxIT/hassio-addons
 Typical go2rtc API URL examples:
 
 ```text
-http://127.0.0.1:1984
+http://a889bffc-go2rtc:1984
+http://192.168.90.10:1984
 http://homeassistant.local:1984
-http://ccab4aaf_go2rtc:1984
 ```
 
 The matching RTSP base URL normally uses the same host with port `8554`:
 
 ```text
-rtsp://127.0.0.1:8554
+rtsp://a889bffc-go2rtc:8554
+rtsp://192.168.90.10:8554
 rtsp://homeassistant.local:8554
-rtsp://ccab4aaf_go2rtc:8554
 ```
 
 ## HACS Install
