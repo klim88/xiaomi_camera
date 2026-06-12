@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Xiaomi Camera",
+        "description": "Connect to go2rtc and log in to Xiaomi Mi Home. The Xiaomi password is only sent to go2rtc during setup.",
+        "data": {
+          "go2rtc_url": "go2rtc API URL",
+          "go2rtc_rtsp_url": "RTSP base URL",
+          "region": "Xiaomi region",
+          "username": "Xiaomi account",
+          "password": "Password"
+        }
+      },
+      "captcha": {
+        "title": "Xiaomi captcha",
+        "description": "go2rtc requested a captcha. Open the go2rtc Xiaomi login page if the image is not visible here. Captcha data: `{captcha}`",
+        "data": {
+          "captcha": "Captcha"
+        }
+      },
+      "verify": {
+        "title": "Xiaomi verification",
+        "description": "Enter the Xiaomi verification code sent to `{verify_hint}`.",
+        "data": {
+          "verify": "Verification code"
+        }
+      },
+      "account": {
+        "title": "Xiaomi account",
+        "data": {
+          "account_id": "Account"
+        }
+      },
+      "camera": {
+        "title": "Select cameras",
+        "data": {
+          "selected_cameras": "Cameras"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to go2rtc or create the camera stream.",
+      "invalid_auth": "Xiaomi login failed.",
+      "no_camera_selected": "Select at least one camera.",
+      "no_cameras": "No Xiaomi cameras were found for this account and region."
+    },
+    "abort": {
+      "already_configured": "This Xiaomi account and region are already configured.",
+      "no_accounts": "go2rtc did not return a Xiaomi account after login."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Xiaomi Camera",
+        "description": "Update go2rtc connection settings.",
+        "data": {
+          "go2rtc_url": "go2rtc API URL",
+          "go2rtc_rtsp_url": "RTSP base URL"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to go2rtc."
+    }
+  }
+}

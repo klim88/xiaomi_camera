@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+
+# Local go2rtc and Home Assistant files may contain tokens or credentials.
+go2rtc.yaml
+secrets.yaml
+configuration.yaml
+*.storage
+
+# Local camera captures and test artifacts.
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.mkv

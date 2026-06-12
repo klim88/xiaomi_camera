@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Xiaomi Camera",
+        "description": "Подключение к go2rtc и вход в Xiaomi Mi Home. Пароль Xiaomi отправляется только в go2rtc во время настройки.",
+        "data": {
+          "go2rtc_url": "URL API go2rtc",
+          "go2rtc_rtsp_url": "Базовый RTSP URL",
+          "region": "Регион Xiaomi",
+          "username": "Аккаунт Xiaomi",
+          "password": "Пароль"
+        }
+      },
+      "captcha": {
+        "title": "Капча Xiaomi",
+        "description": "go2rtc запросил капчу. Если картинка не видна здесь, откройте страницу входа Xiaomi в go2rtc. Данные капчи: `{captcha}`",
+        "data": {
+          "captcha": "Капча"
+        }
+      },
+      "verify": {
+        "title": "Проверочный код Xiaomi",
+        "description": "Введите проверочный код Xiaomi, отправленный на `{verify_hint}`.",
+        "data": {
+          "verify": "Проверочный код"
+        }
+      },
+      "account": {
+        "title": "Аккаунт Xiaomi",
+        "data": {
+          "account_id": "Аккаунт"
+        }
+      },
+      "camera": {
+        "title": "Выбор камер",
+        "data": {
+          "selected_cameras": "Камеры"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться к go2rtc или создать поток камеры.",
+      "invalid_auth": "Ошибка входа в Xiaomi.",
+      "no_camera_selected": "Выберите хотя бы одну камеру.",
+      "no_cameras": "Для этого аккаунта и региона камеры Xiaomi не найдены."
+    },
+    "abort": {
+      "already_configured": "Этот аккаунт Xiaomi и регион уже настроены.",
+      "no_accounts": "go2rtc не вернул аккаунт Xiaomi после входа."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Xiaomi Camera",
+        "description": "Обновление настроек подключения к go2rtc.",
+        "data": {
+          "go2rtc_url": "URL API go2rtc",
+          "go2rtc_rtsp_url": "Базовый RTSP URL"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться к go2rtc."
+    }
+  }
+}
